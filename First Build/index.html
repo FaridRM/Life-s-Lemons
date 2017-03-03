@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Life's Lemons aka Another F##KING Idle Game</title>
+		<link rel="stylesheet" type="text/css" href="css/interface.css">
+	</head>
+
+	<body class="gamebgc">
+		<div id="quote">
+			<p>Random Life giving lemons quote</p>
+		</div>
+		<div id="clicks">
+			<p>
+				<input id="upgrade" type="image" src="lemon.png" width="200" onclick="lemonClick(1);"><!--The button defines what type of input it is. THe value names the button. The onclick asks the javascript function to activate.-->
+				<span id="lemons">0</span>
+			</p>
+			<p><input type="button" value="Delete Save" onclick="wipeSave();"></p>
+		</div>
+		<div id="buildings">
+
+		</div>
+
+		<table>
+			<thead class="tableBuildingBGC">
+				<tr>
+					<th>Buy</th>
+					<th>Name</th>
+					<th>#</th>
+					<th>Cost</th>
+					<!--><th>Secondary Cost</th><-->
+					<th>Lemons/s</th>
+				</tr>
+			</thead>
+			<tbody class="tableBuildingBGC">
+				<tr>
+					<td><input type="image" src="lemonpicker.png" width="75" onclick="buyPicker();"></td>
+					<td>Lemon Pickers</td>
+					<td><span id="picker">0</span></td>
+					<td><span id="pickerCost">10</span></td>
+					<!--><td>None</td><-->
+					<td><span id="pickerPS">0</span></td>
+				</tr>
+				<tr>
+					<td><input type="image" src="farmer.png" width="75" onclick="buyFarmer();"></td>
+					<td>Lemon Farmers</td>
+					<td><span id="farmer">0</span></td>
+					<td><span id="farmerCost">100</span></td>
+					<!--><td>None</td><-->
+					<td><span id="farmerPS">0</span></td>
+				</tr>
+
+
+			</tbody>
+
+		</table>
+		<table id="upgrades">
+			<thead class="tableUpgradeBGC">
+				<tr>
+					<th>Buy</th>
+					<th>Name</th>
+					<th>#</th>
+					<th>Cost</th>
+					<th>Add. Cost</th>
+					<th>Upgrade</th>
+				</tr>
+			</thead>
+			<tbody class="tableUpgradeBGC">
+				<tr>
+					<td><input type="image" src="lemon.png" width="65" onclick="clickIncrement();"></td>
+					<td>Lemon Clicks</td>
+					<td><span id="clicker">0</span></td>
+					<td><span id="clickerCost">10</span></td>
+					<td>None</td>
+					<td>Lemons Per Click: <span id="CPS">1</span></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Tools" width="75" onclick="clickTool();"></td>
+					<td>Tools</td>
+					<td><span id="tools">0</span></td>
+					<td><span id="toolLemonCost">100</span></td>
+					<td><span id="toolPickerCost">10</span></td>
+					<td>+1 Base Picker L/s:<span id="toolPS">0</span></td>
+				</tr>
+				<tr>
+					<td><input type="image" src="union.png" width="75" onclick="clickUnion();"></td>
+					<td>Unions</td>
+					<td><span id="union">0</span></td>
+					<td><span id="unionLemonCost">1000</span></td>
+					<td><span id="unionFarmerCost">10</span></td>
+					<td>+10 Base Farmers L/s:<span id="unionPS">0</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

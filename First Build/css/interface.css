@@ -1,0 +1,29 @@
+#clicks{
+	margin-left: auto;
+	margin-right: auto;
+	width:6em;
+}
+
+#quote{
+	position:absolute;
+}
+
+#upgrades{
+	position:absolute;
+	right: 0px;
+	top: 270px;
+}
+
+.gamebgc{
+	background-color:#1B95E0;
+	
+}
+
+.tableBuildingBGC{
+	background-color:#498637;
+}
+
+.tableUpgradeBGC{
+	background-color:#A01157;
+}
+	
